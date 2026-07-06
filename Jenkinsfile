@@ -20,5 +20,11 @@ pipeline {
                 echo "Testing ${env.BRANCH_NAME}"
             }
         }
+
+        stage('Deploye') {
+            steps {
+                echo "Deploying ${env.BRANCH_NAME}"
+            }
+        }
     }
 }
